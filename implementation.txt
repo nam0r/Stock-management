@@ -21,3 +21,14 @@ _Brakes
 /** Gestion des stocks */
 Data : 
 _articles<>
+
+Fonctions à implémenter : 
+_get components
+_get articles dans l'inventaire
+_get valeur des vendus
+_get valeur des en stock
+_get prix des components
+_get prix des articles
+_set j'ai_vendu_un_article
+_set j'ai_commandé_d'un_article
+
