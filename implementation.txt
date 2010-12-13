@@ -1,0 +1,23 @@
+Component : interface
+
+Frames, Forks, Suspensions, Wheels, Brakes : enum implements Component
+_nom
+_prix
+
+Article : abstract
+_prix
+_combien en stock
+_combien vendus
+
+Bike : extends Article
+_super_
+
+_Frames
+_Forks
+_Suspensions
+_Wheels
+_Brakes
+
+/** Gestion des stocks */
+Data : 
+_articles<>
