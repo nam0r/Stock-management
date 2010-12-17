@@ -1,18 +1,14 @@
 package test;
 import java.util.ArrayList;
 
-import stock.*;
 
 import static org.junit.Assert.*;
+
+import model.*;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import stock.Brakes;
-import stock.Fork;
-import stock.Frame;
-import stock.Suspension;
-import stock.Wheels;
 /**
  * This is a JUnit test class for the Bike class
  * @author Guy Champollion

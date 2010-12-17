@@ -2,10 +2,11 @@ package test;
 
 import static org.junit.Assert.*;
 
+import model.NotAvailableException;
+
 import org.junit.Before;
 import org.junit.Test;
 
-import stock.NotAvailableException;
 /**
  * This is a JUnit test class to check the Article behaviour using a mock : ArticleMock.
  * @author Guy Champollion

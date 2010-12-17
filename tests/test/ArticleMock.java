@@ -2,8 +2,9 @@ package test;
 
 import java.util.ArrayList;
 
-import stock.Article;
-import stock.Component;
+import model.Article;
+import model.Component;
+
 /**
  * This class is aimed to test every Article method, to ensure
  * the Article's children classes won't have to test each.
