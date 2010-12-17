@@ -1,7 +1,6 @@
 package stock;
 /** This is the interface for the components of any Article sold.
- * @author Zarmakuizz
- * @author Namor
+ * @author Guy Champollion
  */
 public interface Component {
     /** Returns the component's name. */

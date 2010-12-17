@@ -1,26 +1,35 @@
 Component : interface
 
 Frames, Forks, Suspensions, Wheels, Brakes : enum implements Component
-_nom
-_prix
+_name
+_price
 
 Article : abstract
-_prix
-_combien en stock
-_combien vendus
+_price
+_nbInStock
+_nbSold
+
+public ArrayList<Component> getComponents();
+public double getPrice() {}
+public int getInStock() {}
+public int getSold() {}
+public void sell() {} // On vend 1 vélo à la fois
+public void soldValue() {}
+public void command(){} // On commande un nombre constant de vélos
 
 Bike : extends Article
 _super_
 
-_Frames
-_Forks
-_Suspensions
-_Wheels
-_Brakes
+_Frames frames
+_Forks forks
+_Suspensions suspensions
+_Wheels wheels
+_Brakes brakes
 
 /** Gestion des stocks */
 Data : 
-_articles<>
+_NBTOCOMMAND
+_Articles<>
 
 Fonctions à implémenter : 
 _get components
