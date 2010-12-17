@@ -20,6 +20,9 @@ public void command(){} // On commande un nombre constant de vélos
 Bike : extends Article
 _super_
 
+public ArrayList<Component> getComponents();
+public String toString() {};
+
 _Frames frames
 _Forks forks
 _Suspensions suspensions
