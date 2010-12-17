@@ -11,7 +11,10 @@ public enum Suspension implements Component {
     private final String name;
     /** The price of the component, in euro. */
     private final double price; // in euro
-    /** The constructor of the component */
+    /** The constructor of the component.
+     * @param name A String containing the name of the component.
+     * @param price A double containing the price of the component.
+     */
     Suspension(String name, double price){
         this.name = name;
         this.price = price;
