@@ -1,14 +1,12 @@
 package stock;
 
 /**
-<<<<<<< HEAD
  * This enum lists all the known Suspensions for bikes.
  * 
-=======
  * An enum for the known suspensions for bikes.
->>>>>>> 9ebe08b7d5d43293d086e96c8da9c084544c2fb9
+ * 
  * @author Guy Champollion
- *
+ * 
  */
 public enum Suspensions implements Component {
     FRP23("Fox RP23", 30.00), FRP3("Fox RP3", 40.00);

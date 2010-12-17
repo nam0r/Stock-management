@@ -1,8 +1,10 @@
 package stock;
+
 /**
  * An enum for the known frames for bikes.
+ * 
  * @author Guy Champollion
- *
+ * 
  */
 public enum Frames implements Component {
     SCBLT("Santa Cruz Blur LT", 60.00), SG50("Scott Genius 50", 65.65), SPP(
