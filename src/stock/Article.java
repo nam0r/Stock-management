@@ -24,21 +24,25 @@ public abstract class Article {
         nbVendus = 0;
     }
 
+    /** Renvoit les composants de l'article */
     public abstract ArrayList<Component> getComponents();
 
+    /** Renvoit le prix de l'article */
     public double getPrice() {
         return prix;
     }
-
+    
+    /** Renvoit le nombre d'articles restant dans le stock */
     public int getInStock() {
         return nbEnStock;
     }
-
+    
+    /** Retourne le nombre d'articles vendus */
     public int getSold() {
         return nbVendus;
     }
 
-    // On vend 1 vélo à la fois
+    /** Permet de vendre un article */
     public void sell() {
         if (nbEnStock > 0) {
             nbEnStock--;
@@ -46,7 +50,7 @@ public abstract class Article {
         }
     }
 
-    // Renvoie le chiffre d'affaire généré par l'article en question
+    /** Renvoie le chiffre d'affaire généré par l'article en question */
     public double soldValue() {
         return nbVendus * prix;
     }
