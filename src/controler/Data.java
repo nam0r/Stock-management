@@ -111,18 +111,11 @@ public class Data {
         // Displays the inventory, also get some values (see next)
         double priceAvailable = 0;
         double priceSold = 0;
-<<<<<<< HEAD
         int i = 1;
         for (Article a : articles) {
             string += "Article number " + i + ": " + a;
             priceAvailable += a.getPrice();
             priceSold += a.soldValue();
-=======
-        for (Article a : articles){
-            string+=a;
-            priceAvailable+= a.getPrice();
-            priceSold     += a.soldValue();
->>>>>>> cba60ddecf94eb140858ce28527b7928ddde3ecd
         }
 
         // Displays the total value of the different Articles available
