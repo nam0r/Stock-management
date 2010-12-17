@@ -1,0 +1,6 @@
+********************
+*      README      *
+********************
+
+How to run the software : 
+Import the software's folder onto Eclipse, and run it.
