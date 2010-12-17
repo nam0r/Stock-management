@@ -1,5 +1,9 @@
 package stock;
-
+/**
+ * An enum for the known forks for bikes.
+ * @author Guy Champollion
+ *
+ */
 public enum Forks implements Component {
     FT("Fox Talas", 90.00), MB("Mazarocchi Bomber", 100.53), RSP(
             "Rock Shox Pike", 125.67), RSR("Rock Shox Revelation", 136.32);

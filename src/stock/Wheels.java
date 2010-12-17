@@ -1,5 +1,9 @@
 package stock;
-
+/**
+ * An enum for the known wheels for bikes.
+ * @author Guy Champollion
+ *
+ */
 public enum Wheels implements Component {
     DTSX1800("DT Swiss X1800", 90.00), MXM819("Mavic xm819", 95.95), MC(
             "Mavic CrossMax", 99.99);

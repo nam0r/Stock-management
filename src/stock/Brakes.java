@@ -1,5 +1,9 @@
 package stock;
-
+/**
+ * An enum for the known brakes for bikes.
+ * @author Guy Champollion
+ *
+ */
 public enum Brakes implements Component {
     AJ("Avid Juicy", 20.00), FTO("Formula THE ONE", 17.75), HMM(
             "Hope Mono Mini", 18.99);

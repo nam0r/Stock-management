@@ -1,5 +1,12 @@
 package stock;
 
+/**
+ * This is an abstract class for all the Article that are sold.
+ * @author Zarmakuizz
+ * @author Namor
+ *
+ */
+
 import java.util.ArrayList;
 
 public abstract class Article {
@@ -12,11 +19,11 @@ public abstract class Article {
     /** Constante de commande */
     public static final int COMMAND = 20;
 
-    public Article(int nbEnStock){
+    public Article(int nbEnStock) {
         this.nbEnStock = nbEnStock;
         nbVendus = 0;
     }
-    
+
     public abstract ArrayList<Component> getComponents();
 
     public double getPrice() {
@@ -41,11 +48,6 @@ public abstract class Article {
 
     // Renvoie le chiffre d'affaire généré par l'article en question
     public double soldValue() {
-        return nbVendus*prix;
-    }
-
-    // On commande un nombre constant de vélos ?
-    public void command() {
-        nbEnStock += COMMAND;
+        return nbVendus * prix;
     }
 }
