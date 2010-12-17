@@ -8,6 +8,7 @@ Article : abstract
 _price
 _nbInStock
 _nbSold
+_COMMAND
 
 public ArrayList<Component> getComponents();
 public double getPrice() {}
@@ -31,7 +32,6 @@ _Brakes brakes
 
 /** Gestion des stocks */
 Data : 
-_NBTOCOMMAND
 _Articles<>
 
 Fonctions à implémenter : 
