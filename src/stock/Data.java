@@ -1,5 +1,11 @@
 package stock;
 
-public class Data {
+/** This class stores informations */
 
+public class Data {
+    
+    
+    public Data(){
+        
+    }
 }

@@ -2,56 +2,75 @@ package stock;
 
 /**
  * This is an abstract class for all the Article that are sold.
- * @author Zarmakuizz
- * @author Namor
+ * @author Roman MKRTCHIAN
  *
  */
 
 import java.util.ArrayList;
 
 public abstract class Article {
-    /** Le prix de l'article, en euros. */
-    protected double prix;
-    /** Le nombre d'article encore disponible en stock. */
-    protected int nbEnStock;
-    /** Le nombre d'article vendu. */
-    protected int nbVendus;
-    /** Constante de commande */
+    /** Price of the article, in euros */
+    protected double price;
+    /** Number of articles in the stock */
+    protected int nbInStock;
+    /** Number of articles sold */
+    protected int nbSold;
+    /** Number of articles in each command */
     public static final int COMMAND = 20;
 
-    public Article(int nbEnStock) {
-        this.nbEnStock = nbEnStock;
-        nbVendus = 0;
+    /**
+     * The constructor for the Article class.
+     * @param nbInStock  The number of this new Article in stock.
+     */
+    public Article(int nbInStock) {
+        this.nbInStock = nbInStock;
+        nbSold = 0;
     }
 
-    /** Renvoit les composants de l'article */
+    /**
+     * Get the Article's components and returns a list of Components.
+     * @return An ArrayList of Components.
+     */
     public abstract ArrayList<Component> getComponents();
 
-    /** Renvoit le prix de l'article */
+    /**
+     * Get the Article's price.
+     * @return price An ArrayList of Components.
+     */
     public double getPrice() {
-        return prix;
+        return price;
     }
     
-    /** Renvoit le nombre d'articles restant dans le stock */
+    /**
+     * Get the number of articles in stock.
+     * @return nbInStock the number of articles in stock.
+     */
     public int getInStock() {
-        return nbEnStock;
+        return nbInStock;
     }
     
-    /** Retourne le nombre d'articles vendus */
+    /**
+     * Get the the number of articles sold.
+     * @return nbSold the number of articles sold.
+     */
     public int getSold() {
-        return nbVendus;
+        return nbSold;
     }
 
-    /** Permet de vendre un article */
-    public void sell() {
-        if (nbEnStock > 0) {
-            nbEnStock--;
-            nbVendus++;
+    /** Sells an article. */
+    public void sell() throws NotAvailableException {
+        if (nbInStock > 0) {
+            nbInStock--;
+            nbSold++;
         }
+        else throw new NotAvailableException();
     }
 
-    /** Renvoie le chiffre d'affaire généré par l'article en question */
+    /**
+     * Get the total price of all sold bikes.
+     * @return nbSold the total price of all sold bikes.
+     */
     public double soldValue() {
-        return nbVendus * prix;
+        return nbSold * price;
     }
 }
