@@ -21,7 +21,7 @@ Bike : extends Article
 _super_
 
 public ArrayList<Component> getComponents();
-public String toString() {};
+public String toString() {}
 
 _Frames frames
 _Forks forks
