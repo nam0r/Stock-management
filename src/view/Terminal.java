@@ -55,5 +55,7 @@ public class Terminal {
     /**
      * Displays a sell
      */
-    public void sellDisplay(){}
+    public void sellDisplay(){
+        System.out.print("      Which article number has beel sold ? : ");
+    }
 }

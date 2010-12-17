@@ -101,8 +101,9 @@ public class Data {
         // Displays the inventory, also get some values for the next
         double priceAvailable = 0;
         double priceSold = 0;
+        int i=1;
         for (Article a : articles){
-            string+=a;
+            string+="Article number "+i+": "+a;
             priceAvailable+= a.getPrice();
             priceSold     += a.soldValue();
         }

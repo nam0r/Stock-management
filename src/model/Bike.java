@@ -55,7 +55,7 @@ public class Bike extends Article {
      * @return string A String describing the bike.
      */
     public String toString(){
-        String string="";
+        String string="Bike\n";
         string+="Frame: "     +frame.getName()     +"\n";
         string+="Fork: "      +fork.getName()      +"\n";
         string+="Suspension: "+suspension.getName()+"\n";
