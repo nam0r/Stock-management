@@ -1,8 +1,8 @@
 package stock;
 /**
  * This is an abstract class for all the Article that are sold.
- * @author Guy Champollion
- * @author Roman Mkrtchian
+ * @author Zarmakuizz
+ * @author Namor
  *
  */
 public abstract class Article {
