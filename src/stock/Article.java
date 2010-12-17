@@ -57,7 +57,8 @@ public abstract class Article {
         return nbSold;
     }
 
-    /** Sells an article. */
+    /** Sells an article.
+     * That means, it removes an article in stock, and says that one has been sold. */
     public void sell() throws NotAvailableException {
         if (nbInStock > 0) {
             nbInStock--;
@@ -67,10 +68,17 @@ public abstract class Article {
     }
 
     /**
-     * Get the total price of all sold bikes.
-     * @return nbSold the total price of all sold bikes.
+     * Get the total value of all sold bikes.
+     * @return nbSold the total value of all sold bikes.
      */
     public double soldValue() {
         return nbSold * price;
+    }
+    
+    /**
+     * Command more of the current Article.
+     */
+    public void command(){
+        nbInStock += COMMAND;
     }
 }

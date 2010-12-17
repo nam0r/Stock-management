@@ -1,5 +1,7 @@
 package test;
-import stock.Bike;
+import java.util.ArrayList;
+
+import stock.*;
 
 import static org.junit.Assert.*;
 
@@ -17,15 +19,29 @@ import stock.Wheels;
  * @see Bike
  */
 public class BikeTest {
-
+    private Bike bike;
+    /**
+     * Before processing to test, it creates a new instance of the tested Bike class.
+     * @throws Exception
+     */
     @Before
     public void setUp() throws Exception {
-        Bike bike = new Bike(0,Brakes.AJ,Fork.FT,Frame.SPP,Suspension.FRP23,Wheels.DTSX1800);
+        bike = new Bike(0,Brakes.AJ,Fork.FT,Frame.SPP,Suspension.FRP23,Wheels.DTSX1800);
     }
-
+    /**
+     * A test to ensure the Bike.getComponent method returns all the Components of the Bike.
+     */
     @Test
     public void testGetComponents() {
-        fail("Not yet implemented");
+        ArrayList<Component> expected = new ArrayList<Component>();
+        expected.add(Brakes.AJ);
+        expected.add(Fork.FT);
+        expected.add(Frame.SPP);
+        expected.add(Suspension.FRP23);
+        expected.add(Wheels.DTSX1800);
+        
+        ArrayList<Component> actual = bike.getComponents();
+        assertEquals(expected,actual);
     }
 
 }
