@@ -61,6 +61,8 @@ public class Bike extends Article {
         string+="Suspension: "+suspension.getName()+"\n";
         string+="Wheels: "    +wheels.getName()    +"\n";
         string+="Brakes: "    +brakes.getName()    +"\n";
+        string+="Price: "              + this.price     + "\n";
+        string+="Available in stock: " + this.nbInStock + "\n";
         return string;
     }
 }
